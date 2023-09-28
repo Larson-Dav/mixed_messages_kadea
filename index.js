@@ -1,66 +1,78 @@
-console.log('Random Message generator')
+// console.log('Random Message generator')
 
-console.log('Let started')
+// console.log('Let started')
 
-console.log('On develop')
+// console.log('On develop')
 
 const dataRource1 = [
     {
-      title: 'The Road Ahead',
-      author: 'Bill Gates',
-      libraryID: 1954
+      1: 'The Road Ahead',
+      2: 'Bill Gates',
+      3: 1954
     },
     {
-      title: 'Walter Isaacson',
-      author: 'Steve Jobs',
-      libraryID: 7389
+      1: 'Walter Isaacson',
+      2: 'Steve Jobs',
+      3: 7389
     },
     {
-      title: 'Mockingjay: The Final Book of The Hunger Games',
-      author: 'Suzanne Collins',
-      libraryID: 1245
+      1: 'Mockingjay: The Final Book of The Hunger Games',
+      2: 'Suzanne Collins',
+      3: 1245
     }
 ]
 
 const dataRource2 = [
     {
-      app: 'Wikipedia',
-      user: '+10M',
-      libraryID: 1922
+      1: 'Wikipedia',
+      2: '+10M',
+      3: 1922
     },
     {
-      title: 'Google',
-      author: 'Over 4 billion',
-      libraryID: 4264
+      1: 'Google',
+      2: 'Over 4 billion',
+      3: 4264
     },
     {
-      title: 'Facebook',
-      user: '2 billion',
-      created: 1945
+      1: 'Facebook',
+      2: '2 billion',
+      3: 1945
     }
 ]
 
 const dataRource = [
     {
-      title: 'christof',
-      age: 12,
-      passion: 'developement'
+      1: 'christof',
+      2: 12,
+      3: 'developement'
     },
     {
-        title: 'john',
-        age: 56,
-        passion: 'developement'
+        1: 'john',
+        2: 56,
+        3: 'developement'
     },
     {
-        title: 'christof',
-        age: 12,
-        passion: 'developement'
+        1: 'christof',
+        2: 12,
+        3: 'developement'
     }
 ]
 
-const greet = ['Bonjour','Bonsoir','Salue','Hey']
+const greet = ['Bonjour','Bonsoir','Salue','Hey','salam','Hi','Hello','Holla','yo','plesea']
+const cname = ['steve jobs','Larry page','Mark zukeberg','john smith','linus makfield']
 
 
 
+function MessageGenerator(){
+  const mess = greet[parseInt(Math.random()*10)]
+  const noms = dataRource[parseInt(Math.random()*2)][1]
+  const ent_name =  dataRource2[parseInt(Math.random()*2)][1]
+  const ent_date =  dataRource2[parseInt(Math.random()*2)][3]
+  const ent_user =  dataRource2[parseInt(Math.random()*2)][2]
+  const ent_creator = cname[parseInt(Math.random()*3)]
+  
+  return mess + ' ' + noms + ', ' + ent_name + ' a ete creer en ' + ent_date + ' par ' + ent_creator
+}
+console.log(MessageGenerator())
 
 
