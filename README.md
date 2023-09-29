@@ -29,7 +29,7 @@ Il a été conçu par des passionnés de|d' Developement Web.
 Vous retrouverez toute l'histoire dans le livre -The Giant Story- de Steve Jobs qui est à moins 450 Pages.
 ```
 ### Second execution
-```bash
+```text
 Hey Emma, Pinterest a été créée en 1967 par Elon Musk et compte aujourd'hui +45M d'utilisateurs .
 Il a été conçu par des passionnés de|d' Ux Design.
 Vous retrouverez toute l'histoire dans le livre -Dev Strory- de Natan  Spenser qui est à moins 1245 Pages.
