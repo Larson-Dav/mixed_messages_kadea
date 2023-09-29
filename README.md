@@ -1,10 +1,11 @@
-# mixed_messages_kadea
+# Small MessageGenerator
 
-## Usage
+## About the project
 
-function to log into console
+.The messages generated are not true
+.5 data sources are combined to generate these messages
+.The function which is used to generate the messages returns a value without displaying it, console.log() is used to display the return value
 
 ```javascript
-console.log(varaiable)
-
+console.log(MessageGenerator())
 `````
