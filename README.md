@@ -1,8 +1,7 @@
-# mixed_messages_kadea
+# Small MessageGenerator
 
-## Usage
+## About Project
 
-function to log into console
 
 ```javascript
 console.log(varaiable)
