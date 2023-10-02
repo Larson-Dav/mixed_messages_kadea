@@ -1,6 +1,6 @@
 # Small MessageGenerator
 
-Random Mesage Generate automatically
+Automatically generated random messages
 
 ## About the project
 
