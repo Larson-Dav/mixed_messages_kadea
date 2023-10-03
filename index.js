@@ -41,30 +41,9 @@ const dataRource = [
   { nom: "Thierry", age: 12, passion: "Prog Frontend" },
 ];
 
-const greet = [
-  "Bonjour",
-  "Bonsoir",
-  "Salue",
-  "Hey",
-  "salam",
-  "Hi",
-  "Hello",
-  "Holla",
-  "yo",
-  "plesea",
-];
-const cname = [
-  "Steve Jobs",
-  "Larry Page",
-  "Mark Zukeberg",
-  "Elon Musk",
-  "Jack Ma",
-  "Xian Bing",
-  "Bill Gate",
-  "Curl yung",
-  "Liong Ben",
-  "Linus Torvalds",
-];
+const greet = ['Bonjour','Bonsoir','Salue','Hey','salam','Hi','Hello','Holla','yo','plesea']
+const cname = ['Steve Jobs','Larry Page','Mark Zukeberg','Elon Musk','Jack Ma',
+               'Xian Bing','Bill Gate','Curl yung','Liong Ben','Linus Torvalds']
 
 function MessageGenerator() {
   const random = Math.floor(Math.random() * 9);
