@@ -41,27 +41,23 @@ const greet = ['Bonjour','Bonsoir','Salue','Hey','salam','Hi','Hello','Holla','y
 const cname = ['Steve Jobs','Larry Page','Mark Zukeberg','Elon Musk','Jack Ma',
                'Xian Bing','Bill Gate','Curl yung','Liong Ben','Linus Torvalds']
 
+function MessageGenerator() {
+  const random = Math.floor(Math.random() * 9);
+  const mess = greet[random];
+  const noms = dataRource[random]["nom"];
+  const ent_name = dataRource2[random]["Enterprise"];
+  const ent_date = dataRource2[random]["Year"];
+  const ent_user = dataRource2[random]["users"];
+  const ent_creator = cname[random];
+  const pass = dataRource[random]["passion"];
+  const book = dataRource1[random]["book"];
+  const author = dataRource1[random]["author"];
+  const pages = dataRource1[random]["pages"];
 
-
-function MessageGenerator(){
-  const random = Math.random()*9
-  const mess = greet[parseInt(random)]
-  const noms = dataRource[parseInt(random)]['nom']
-  const ent_name =  dataRource2[parseInt(random)]['Enterprise']
-  const ent_date =  dataRource2[parseInt(random)]['Year']
-  const ent_user =  dataRource2[parseInt(random)]['users']
-  const ent_creator = cname[parseInt(random)]
-  const pass = dataRource[parseInt(random)]['passion']
-  const book = dataRource1[parseInt(random)]['book']
-  const author = dataRource1[parseInt(random)]['author']
-  const pages = dataRource1[parseInt(random)]['pages']
-  
   return mess + " "  + noms + ", " + ent_name + " a été créée en " + 
          ent_date + " par " + ent_creator + " et compte aujourd'hui " + 
          ent_user + " d'utilisateurs . Il a été conçu par des passionnés de|d' " + 
          pass + ". Vous retrouverez toute l'histoire dans le livre "+
          book + " de " + author + " qui est à moins "+ pages + " Pages."
 }
-console.log(MessageGenerator())
-
-
+console.log(MessageGenerator());
