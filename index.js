@@ -79,27 +79,10 @@ function MessageGenerator() {
   const author = dataRource1[random]["author"];
   const pages = dataRource1[random]["pages"];
 
-  return (
-    mess +
-    " " +
-    noms +
-    ", " +
-    ent_name +
-    " a été créée en " +
-    ent_date +
-    " par " +
-    ent_creator +
-    " et compte aujourd'hui " +
-    ent_user +
-    " d'utilisateurs . Il a été conçu par des passionnés de|d' " +
-    pass +
-    ". Vous retrouverez toute l'histoire dans le livre " +
-    book +
-    " de " +
-    author +
-    " qui est à moins " +
-    pages +
-    " Pages."
-  );
+  return mess + " "  + noms + ", " + ent_name + " a été créée en " + 
+         ent_date + " par " + ent_creator + " et compte aujourd'hui " + 
+         ent_user + " d'utilisateurs . Il a été conçu par des passionnés de|d' " + 
+         pass + ". Vous retrouverez toute l'histoire dans le livre "+
+         book + " de " + author + " qui est à moins "+ pages + " Pages."
 }
 console.log(MessageGenerator());
